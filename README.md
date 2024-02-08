@@ -38,8 +38,6 @@ Make sure that you download the ImageNet pre-trained models to `checkpoints/` (o
 
 The download links of pre-trained models are in `checkpoints/checkpoints.txt`
 
-Thanks to the offical Pytorch and [Swin Transformer](https://github.com/microsoft/Swin-Transformer)
-
 Training and Testing
 =
 - to train our approach on BP4D Dataset, run:
