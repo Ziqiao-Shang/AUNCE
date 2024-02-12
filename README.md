@@ -1,7 +1,7 @@
 AUNCE
 =
 - Paper title : Learning Contrastive Feature Representations for Facial Action Unit Detection
-- Arxiv : Our paper has been submitted to Arxiv, the link will come soon.
+- Arxiv : [Paper](https://arxiv.org/abs/2402.06165)
 
 Requirements
 =
