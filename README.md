@@ -96,10 +96,11 @@ Pretrained models
 =
 The trained models can be downloaded [here](https://drive.google.com/drive/folders/1UNyjXUiALkJO42WKh9hiVAQD_BN4XoD2?usp=sharing).
 
+Citation
+=
+Our paper will come soon.
+
 Demos
 =
 Our single-image demos will come soon.
 
-Citation
-=
-Our paper will come soon.
