@@ -1,7 +1,6 @@
 AUNCE
 =
 - Paper title : Learning Contrastive Feature Representations for Facial Action Unit Detection
-- Arxiv : [Paper](https://arxiv.org/abs/2402.06165)
 
 Requirements
 =
