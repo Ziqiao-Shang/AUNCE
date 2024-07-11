@@ -32,10 +32,8 @@ parser.add_argument('--n_epochs', type=int, default=100, metavar='N', help='numb
 parser.add_argument('--weight_decay', type=float, default=1e-6, help='weight decay for optimizer')                                                  
 parser.add_argument('--num_workers', default=4, type=int, metavar='N', help='number of data loading workers (default: 4)')
 
-# Device and Seed
-parser.add_argument('--gpu_ids', type=str, default='0', help='gpu ids: e.g. 0  0,1,2, 0,2. use -1 for CPU')
-
 # Experiment
+parser.add_argument('--gpu_ids', type=str, default='0', help='gpu ids: e.g. 0  0,1,2, 0,2. use -1 for CPU')
 parser.add_argument('--dataset_path', type=str, default="data/BP4D", help="experiment dataset path of BP4D / DISFA")
 parser.add_argument('--model_path', type=str, default='good_pretrain_model/Graphau_bp4d_swin_nce_step_1/bp4d_graphau_net_nce_model_fold1.pth', help='The pretrained model path')
 parser.add_argument('--exp_name', type=str, default="Linear_graphau_bp4d_swin_nce_step_1", help="experiment name for saving checkpoints")
@@ -175,12 +173,7 @@ class Val_Net(nn.Module):
         return aus_output  
 
 if __name__ == '__main__':
-    seed = 3407
-    random.seed(seed)
-    np.random.seed(seed)
-    torch.manual_seed(seed)
-    torch.cuda.manual_seed(seed)
-    torch.cuda.manual_seed_all(seed)
+    set_seed(3407)
     set_env(args)
     set_linear(args)
     main(args)
