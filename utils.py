@@ -133,11 +133,6 @@ def get_config():
     return cfg
 
 def set_env(cfg):
-    random.seed(cfg.seed)
-    np.random.seed(cfg.seed)
-    torch.manual_seed(cfg.seed)
-    torch.cuda.manual_seed(cfg.seed)
-    torch.cuda.manual_seed_all(cfg.seed)
     if 'cudnn' in cfg:
         torch.backends.cudnn.benchmark = cfg.cudnn
     else:
@@ -145,7 +140,6 @@ def set_env(cfg):
     cudnn.deterministic = True
     os.environ["NUMEXPR_MAX_THREADS"] = '16'
     os.environ["CUDA_VISIBLE_DEVICES"] = cfg.gpu_ids
-
 
 def set_outdir(conf):
     default_outdir = 'results'
