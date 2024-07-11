@@ -137,13 +137,13 @@ def set_seed(seed):
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
-
-def set_env(cfg):
     if 'cudnn' in cfg:
         torch.backends.cudnn.benchmark = cfg.cudnn
     else:
         torch.backends.cudnn.benchmark = False
     cudnn.deterministic = True
+
+def set_env(cfg):
     os.environ["NUMEXPR_MAX_THREADS"] = '16'
     os.environ["CUDA_VISIBLE_DEVICES"] = cfg.gpu_ids
 
