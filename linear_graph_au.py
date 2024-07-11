@@ -4,6 +4,8 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from tqdm import tqdm
+import numpy as np
+import random
 
 from data_loader import *
 from pre_process import *
@@ -32,7 +34,6 @@ parser.add_argument('--num_workers', default=4, type=int, metavar='N', help='num
 
 # Device and Seed
 parser.add_argument('--gpu_ids', type=str, default='0', help='gpu ids: e.g. 0  0,1,2, 0,2. use -1 for CPU')
-parser.add_argument('--seed', type=int, default=3407, help='seeding for all random operation')
 
 # Experiment
 parser.add_argument('--dataset_path', type=str, default="data/BP4D", help="experiment dataset path of BP4D / DISFA")
@@ -174,6 +175,12 @@ class Val_Net(nn.Module):
         return aus_output  
 
 if __name__ == '__main__':
+    seed = 3407
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
     set_env(args)
     set_linear(args)
     main(args)
