@@ -131,6 +131,13 @@ def get_config():
     cfg.update(datasets_cfg) 
     return cfg
 
+def set_seed(seed):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+
 def set_env(cfg):
     if 'cudnn' in cfg:
         torch.backends.cudnn.benchmark = cfg.cudnn
