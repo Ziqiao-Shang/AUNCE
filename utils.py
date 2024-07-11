@@ -4,7 +4,6 @@ import torch.backends.cudnn as cudnn
 import os
 import numpy as np
 import torch
-import random
 import logging
 import yaml
 from datetime import datetime
