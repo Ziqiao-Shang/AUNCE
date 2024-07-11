@@ -28,7 +28,6 @@ parser.add_argument('--num_workers', default=4, type=int, metavar='N', help='num
 
 # Other Settings
 parser.add_argument('--gpu_ids', type=str, default='0', help='gpu ids: e.g. 0  0,1,2, 0,2. use -1 for CPU')
-parser.add_argument('--seed', type=int, default=3407, help='seeding for all random operation')
 parser.add_argument('--exp_name', type=str, default="Graphau_bp4d_swin_fold_1", help="experiment name for saving checkpoints")
 
 def parser2dict():
