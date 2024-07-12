@@ -109,7 +109,7 @@ Main Results
 
 Pretrained models
 =
-The trained models can be downloaded [here](https://drive.google.com/drive/folders/1UNyjXUiALkJO42WKh9hiVAQD_BN4XoD2?usp=sharing).
+The trained models can be downloaded [here](https://drive.google.com/drive/folders/19gQasYDALVbtEr-J9SLFqexjrFuRUtYi?usp=sharing).
 
 Citation
 =
