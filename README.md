@@ -34,7 +34,7 @@ Make sure that you download the ImageNet pre-trained models to `checkpoints/` (o
 
 The download links of pre-trained models are in `checkpoints/checkpoints.txt`
 
-Training and Testing
+Training
 =
 - to train our approach on BP4D Dataset, run:
 ```
@@ -45,6 +45,8 @@ python train_graph_au.py --dataset "BP4D" --exp_name "Graphau_bp4d_swin_nce_step
 ```
 python train_graph_au.py --dataset "DISFA" --exp_name "Graphau_disfa_swin_nce_step_1" --fold 1 --gpu_ids '0' --info_nce 'enhance' 
 ```
+
+Testing
 
 - to perform linear evaluation on BP4D Dataset, run:
 ```
@@ -118,8 +120,3 @@ The trained models can be downloaded [here](https://drive.google.com/drive/folde
 Citation
 =
 Our paper will come soon.
-
-Demos
-=
-Our single-image demos will come soon.
-
