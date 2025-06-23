@@ -3,6 +3,11 @@
 
 Requirements
 =
+For the Facial Action Unit (AU) detection task, accurately capturing the subtle facial differences between distinct AUs is essential for reliable detection. Additionally, AU detection faces challenges from class imbalance and the presence of noisy or false labels, which undermine detection accuracy. In this paper, we introduce a novel contrastive learning framework aimed for AU detection that incorporates both self-supervised and supervised signals, thereby enhancing the learning of discriminative features for accurate AU detection. To tackle the class imbalance issue, we employ a negative sample re-weighting strategy that adjusts the step size of updating parameters for minority and majority class samples. Moreover, to address the challenges posed by noisy and false AU labels, we employ a sampling technique that encompasses three distinct types of positive sample pairs. This enables us to inject self-supervised signals into the supervised signal, effectively mitigating the adverse effects of noisy labels. Our experimental assessments, conducted on five widely-utilized benchmark datasets (BP4D, DISFA, BP4D+, GFT and Aff-Wild2), underscore the superior performance of our approach compared to state-of-the-art methods of AU detection.
+![2-a](https://github.com/user-attachments/assets/ec910dfc-5f0e-4607-9635-5a4a43c92e38)
+
+Requirements
+=
 - Python 3
 - torch >= 1.4.0
 - torchvision
