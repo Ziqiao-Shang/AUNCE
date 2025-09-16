@@ -5,7 +5,8 @@ Introduction
 =
 For the Facial Action Unit (AU) detection task, accurately capturing the subtle facial differences between distinct AUs is essential for reliable detection. Additionally, AU detection faces challenges from class imbalance and the presence of noisy or false labels, which undermine detection accuracy. In this paper, we introduce a novel contrastive learning framework aimed for AU detection that incorporates both self-supervised and supervised signals, thereby enhancing the learning of discriminative features for accurate AU detection. To tackle the class imbalance issue, we employ a negative sample re-weighting strategy that adjusts the step size of updating parameters for minority and majority class samples. Moreover, to address the challenges posed by noisy and false AU labels, we employ a sampling technique that encompasses three distinct types of positive sample pairs. This enables us to inject self-supervised signals into the supervised signal, effectively mitigating the adverse effects of noisy labels.
 
-<img width="835" alt="微信图片_20250623194755" src="https://github.com/user-attachments/assets/85129eb5-1557-4e62-a724-bae4fda15711" />
+<img width="6350" height="2115" alt="540974785f3f1f5b0dbbf123d958f46" src="https://github.com/user-attachments/assets/53cbaf9d-98ac-4548-82ad-c551eaf3314d" />
+
 
 Requirements
 =
