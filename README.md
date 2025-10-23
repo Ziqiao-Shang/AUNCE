@@ -82,7 +82,7 @@ If you use this code for your research, please cite our paper
 ```
 @article{shang2024learning,
   title={Learning contrastive feature representations for facial action unit detection},
-  author={Shang, Ziqiao and Liu, Bin and Lv, Fengmao and Teng, Fei and Li, Tianrui},
+  author={Shang, Ziqiao and Liu, Bin and Lv, Fengmao and Teng, Fei and Li, Tianrui and Guo, Lanzhe},
   journal={arXiv preprint arXiv:2402.06165},
   year={2024}
 }
