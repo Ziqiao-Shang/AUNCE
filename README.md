@@ -78,5 +78,10 @@ The trained models can be downloaded [here](https://drive.google.com/drive/folde
 
 Citation
 =
-Our paper will come soon.
+@article{shang2024learning,
+  title={Learning contrastive feature representations for facial action unit detection},
+  author={Shang, Ziqiao and Liu, Bin and Lv, Fengmao and Teng, Fei and Li, Tianrui},
+  journal={arXiv preprint arXiv:2402.06165},
+  year={2024}
+}
 
